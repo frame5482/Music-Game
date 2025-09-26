@@ -7,10 +7,10 @@ public class NoteData
 {
     public enum NoteType { Attack, Parry }
 
-    public float time;       // เวลาที่โน้ตต้องถึงผู้เล่น (วินาที)
-    public int laneIndex;    // เลน spawn
+    public float time;      
+    public int laneIndex;    
     public NoteType noteType;
-    public float speed;      // ความเร็วของโน้ต (ยูนิต/วินาที)
+    public float speed;     
 }
 
 [CreateAssetMenu(fileName = "Timeline", menuName = "MusicGame/Timeline")]

@@ -41,19 +41,19 @@ MonoBehaviour:
     laneIndex: 1
     noteType: 0
     speed: 20
-  - time: 11
+  - time: 13
     laneIndex: 1
     noteType: 0
     speed: 20
-  - time: 12
+  - time: 14
     laneIndex: 1
     noteType: 1
     speed: 20
-  - time: 12
+  - time: 15
     laneIndex: 1
     noteType: 0
     speed: 20
-  - time: 12
+  - time: 16
     laneIndex: 1
     noteType: 1
     speed: 20

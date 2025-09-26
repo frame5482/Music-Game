@@ -9,6 +9,9 @@ public class Player : MonoBehaviour
     public float _jump;
     public GameObject[] Lane;
 
+    public GameObject[] AttackArea;
+    public GameObject[] ParryArea;
+
     void Start()
     {
 
@@ -23,30 +26,32 @@ public class Player : MonoBehaviour
 
     public void Jump()
     {
-        //ตำแหน่งที่กระโดดให้ไปที่Lane นั้นทีนที
-        //ใช้ปุ้ม D จะโจมตีทีเลน 1 F ปุ่ม จะ parry ที่เลน 1
-        //ใช้ปุ้ม J จะโจมตีทีเลน 2 K ปุ่ม จะ parry ที่เลน 2
-
-        // ตรวจจับการกดปุ่มและย้ายไปเลนนั้นทันที
+      
         if (Input.GetKeyDown(KeyCode.D))
         {
-            transform.position = Lane[0].transform.position; // ไป Lane 1
-            animator.SetTrigger("Attack"); // โจมตี
+
+            transform.position = Lane[0].transform.position;
+            AttackArea[0].SetActive(true);
+            animator.SetTrigger("Attack"); 
         }
         else if (Input.GetKeyDown(KeyCode.F))
         {
-            transform.position = Lane[0].transform.position; // ไป Lane 1
-            animator.SetTrigger("Parry"); // ป้องกัน
+            transform.position = Lane[0].transform.position;
+            ParryArea[0].SetActive(true);
+            animator.SetTrigger("Parry");
+
         }
         else if (Input.GetKeyDown(KeyCode.J))
         {
-            transform.position = Lane[1].transform.position; // ไป Lane 2
-            animator.SetTrigger("Attack"); // โจมตี
+            transform.position = Lane[1].transform.position;
+            AttackArea[1].SetActive(true);
+            animator.SetTrigger("Attack"); 
         }
         else if (Input.GetKeyDown(KeyCode.K))
         {
-            transform.position = Lane[1].transform.position; // ไป Lane 2
-            animator.SetTrigger("Parry"); // ป้องกัน
+            transform.position = Lane[1].transform.position;
+            ParryArea[1].SetActive(true);
+            animator.SetTrigger("Parry"); 
         }
     }
 }

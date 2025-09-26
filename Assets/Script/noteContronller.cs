@@ -4,15 +4,14 @@ using UnityEngine;
 
 public class noteController : MonoBehaviour
 {
-    public TimelineBase timeline;      // ScriptableObject ที่เก็บ timeline โน้ต
-    public GameObject[] notePrefabs;   // index 0 = Attack, 1 = Parry
-    public Transform[] laneTransforms; // ตำแหน่ง spawn ของแต่ละเลน
-    public Transform[] playerTransform;  // ตำแหน่งผู้เล่น
+    public TimelineBase timeline;     
+    public GameObject[] notePrefabs;   
+    public Transform[] laneTransforms; 
+    public Transform[] playerTransform;  
     public bool isPlaying = false;
 
     void Start()
     {
-        // เริ่มเกมอัตโนมัติ
         summon();
     }
 
