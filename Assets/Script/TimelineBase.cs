@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 [System.Serializable]
@@ -17,4 +18,8 @@ public class NoteData
 public class TimelineBase : ScriptableObject
 {
     public List<NoteData> notes = new List<NoteData>();
+   
+
 }
+
+

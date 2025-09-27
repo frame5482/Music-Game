@@ -12,48 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2fa2924a1e16eb4f8540999995f5f26, type: 3}
   m_Name: Timeline
   m_EditorClassIdentifier: 
-  notes:
-  - time: 4
-    laneIndex: 0
-    noteType: 0
-    speed: 20
-  - time: 6
-    laneIndex: 1
-    noteType: 1
-    speed: 20
-  - time: 7
-    laneIndex: 0
-    noteType: 1
-    speed: 20
-  - time: 8
-    laneIndex: 1
-    noteType: 0
-    speed: 20
-  - time: 9
-    laneIndex: 1
-    noteType: 0
-    speed: 20
-  - time: 10
-    laneIndex: 1
-    noteType: 0
-    speed: 20
-  - time: 12
-    laneIndex: 1
-    noteType: 0
-    speed: 20
-  - time: 13
-    laneIndex: 1
-    noteType: 0
-    speed: 20
-  - time: 14
-    laneIndex: 1
-    noteType: 1
-    speed: 20
-  - time: 15
-    laneIndex: 1
-    noteType: 0
-    speed: 20
-  - time: 16
-    laneIndex: 1
-    noteType: 1
-    speed: 20
+  notes: []
